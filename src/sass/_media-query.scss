@@ -1,0 +1,103 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .header {
+        &__nav-list {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: auto;
+            left: inherit;
+            height: auto;
+            background-color: transparent;
+        }
+
+        &__wrapper {
+            padding: 23px 0 9px 0;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+
+    .advantages__list .advantages__item {
+        width: 50%;
+    }
+
+    .button {
+        &_none {
+            display: block;
+        }
+    }
+
+
+
+    .main__info-item {
+        width: 25%;
+    }
+
+    .work__list .work__item {
+        max-width: 32%;
+        margin-bottom: 0;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .questions .container {
+        padding: 65px 100px;
+    }
+
+    .header {
+        &__logo {
+            max-width: 100px;
+        }
+
+        &__contact {
+            display: block;
+        }
+    }
+
+    .main {
+        height: 100vh;
+    }
+
+    .header__nav-item {
+        border-right: 1px dashed rgba($color: #fff, $alpha: 0.4);
+    }
+
+    .footer .footer__contacts img {
+        display: block;
+    }
+
+    .footer .footer__contacts-par {
+        display: block;
+    }
+
+    .pageup {
+        display: none;
+        position: fixed;
+        bottom: 50px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
